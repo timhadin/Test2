@@ -1,9 +1,7 @@
 import java.util.Scanner;
 public class Test2_no4 {
-        public static int sumUp(int n) {
-
-            int sum = 0;
-
+    public static int sumUp(int n) {
+        int sum = 0;
         for (int i = 1; i <= n; i++) {
             sum += i;
         }

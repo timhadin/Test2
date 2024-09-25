@@ -4,7 +4,6 @@ public class Test2_no7_1 {
             System.out.print(c);
         }
     }
-
     public static void putStart(int n) {
         putChar('*', n);  // putChar 호출하면서 *이라는 문자를 n번 표시하라는 뜻
     }

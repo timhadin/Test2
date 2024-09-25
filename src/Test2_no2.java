@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class Test2_no2 {
-    public static int Min(int a, int b, int c) {  // a, b, c 변수 생성
-        int min = a; // a를 최솟값으로 설정
-        if (b < min) { // b가 최솟값보다 작으면
-            min = b; // b를 최솟값으로 대입
+    public static int Min(int a, int b, int c) {
+        int min = a;
+        if (b < min) {
+            min = b;
         }
-        if (c < min) { // c가 최솟값보다 작으면
-            min = c; // c를 최솟값으로 대입
+        if (c < min) {
+            min = c;
         }
-        return min; // 그렇게해서 나온 min 값을 반환
+        return min;
     }
 
     public static void main(String[] args) {
@@ -21,8 +21,13 @@ public class Test2_no2 {
         System.out.print("정수c:");
         int c = sc.nextInt();
 
-        int result = Min(a, b, c); // result라는 변수에 Min 메서드에서 실행한 결과를 대입
+        int result = Min(a, b, c);
 
-        System.out.printf("최솟값은 %d입니다.", result); // result 출력
+        System.out.printf("최솟값은 %d입니다.", result);
     }
 }
+
+// 1. a를 최솟값으로 초기화
+// 2. a와 b를 비교해서 b가 더 작다면 b를 최솟값으로 설정
+// 3. b가 더 크다면 a와 c를 비교하고 c가 더 작다면 c를 최솟값으로 설정
+// 4. c가 더 크다면 a를 최솟값으로 유지
